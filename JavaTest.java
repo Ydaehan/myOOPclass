@@ -10,6 +10,7 @@ public class JavaTest {
     private String name;
     String getName(){
         return name;
+        
         // this. 이 생략 된 코드이다.
         // this. 은 생성된 객체를 가르키며 this.name 은 생성된 객체의 name 값을 가르킴
         
