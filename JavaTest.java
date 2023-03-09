@@ -6,8 +6,10 @@ public class JavaTest {
     // 외부에서 접근하려면? 
     // public method를 만들어라
 
-
+    // instance variable 
     private String name;
+
+    // instance method 
     String getName(){
         return name;
         
@@ -16,6 +18,10 @@ public class JavaTest {
         
     }
 
+    //static method : instance를 생성하지 않아도 접근 가능 (생성 해도 당연히 접근 가능)
+    static void sayHello(){
+        System.out.println("Hi!!!!!!!!!!!!!");
+    }
     void setName(String argName){
         name = argName;
     }
@@ -50,12 +56,14 @@ public class JavaTest {
 
     public static void main(String[] args) {
         JavaTest t = new JavaTest();
-        t.name = "HongGilDong";
-        System.out.println(t.name);
+        // t.name = "HongGilDong";
+        // t.setName("홍길동");
+        // System.out.println(t.name);
 
-        JavaTest t2 = new JavaTest();
-        t2.name = "T2";
-        System.out.println(t.name);
+        // JavaTest t2 = new JavaTest();
+        // t2.name = "T2";
+        // t2.setName("T2");
+        // System.out.println(t2.name); 
         
         // System.out.println("hello world");
         // double r = square(4.0);
@@ -78,5 +86,10 @@ public class JavaTest {
         // System.out.println(4);
         // System.out.println(true);
         // System.out.println(8.6);
+
+        // call static method
+        JavaTest.sayHello(); // instance 로 만들지 않아도 접근이 가능하다
+        t.sayHello(); // instance 를 생성하여도 접근이 가능하다.
+        // 밑줄이 그어지는 이유는 static인데 굳이 왜 객체에서 호출을 했냐는 의문
     }
 }
