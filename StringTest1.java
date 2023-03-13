@@ -17,5 +17,6 @@ public class StringTest1 {
         System.out.println(str + " 은 'www'로 시작하지 않습니다.");
       }
     }
+    scn.close();
   }  
 }
