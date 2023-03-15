@@ -7,7 +7,8 @@ public class PersonTest {
     // public(공개) 메서드를 만들어라
     p.setAge(20);
     p.setName("홍길동");
-    String d = p.dept; // dept 가 private 가 되어 버리면 접근이 불가능 하기 때문에
+    // String d = p.dept; // dept 가 private 가 되어 버리면 접근이 불가능 하기 때문에
+    
     // The field
     int pAge = p.getAge();
     String pName = p.getName();
