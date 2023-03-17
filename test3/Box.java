@@ -11,6 +11,15 @@ public class Box {
     width = w;
     length = l;
     height = h;
-    volume = width * length * height;
+    // volume = width * length * height;
+  }
+
+  boolean isSameBox(Box obj){
+    if((obj.width == width) & (obj.length == length) & (obj.height == height)){
+      return true;
+    }else{
+      return false;
+    }
   }
 }
+
