@@ -21,6 +21,6 @@ public class AnimalTest {
     Eagle eagle = new Eagle();
     // eagle.eat();
     // eagle.sleep();
-    // eagle.sleep();
+    // eagle.fly();
   }
 }

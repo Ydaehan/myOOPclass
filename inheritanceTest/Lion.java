@@ -2,7 +2,7 @@ package inheritanceTest;
 
 import inheritanceClass.Animal;
 
-public class Lion {
+public class Lion extends Animal{
   private int legs = 4;
 
   public int getLegs() {
