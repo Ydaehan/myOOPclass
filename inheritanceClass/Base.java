@@ -9,3 +9,4 @@ public class Base {
     System.out.println("Base() 생성자 호출");
   }
 }
+ 

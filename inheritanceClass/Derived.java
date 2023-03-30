@@ -8,4 +8,4 @@ public class Derived extends Base{
     // super("옛다.");
     System.out.println("Derived() 생성자");
   }
-}
+} 

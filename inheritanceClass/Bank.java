@@ -10,4 +10,4 @@ public class Bank {
   public void setInterestRate(double argInterestRate){
     interestRate = argInterestRate;
   }
-}
+} 
