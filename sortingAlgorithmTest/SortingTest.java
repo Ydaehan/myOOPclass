@@ -19,9 +19,16 @@ public class SortingTest {
     }
     System.out.println();
 
+    // 선택 정렬
     // SortingUtil.SelectionSort(arr);
+
+    // 삽입 정렬
     // SortingUtil.InsertionSort(arr);
+
+    // 버블 정렬
     // SortingUtil.BubbleSort(arr);
+
+    // 퀵 정렬
     SortingUtil.QuickSort(arr, 0, n-1);
     System.out.println("\n정렬 후 : ");
     for(int val : arr) {
