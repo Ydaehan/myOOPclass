@@ -1,3 +1,4 @@
+package test;
 public class Car {
     String color; // 새강
     int speed; // 속도

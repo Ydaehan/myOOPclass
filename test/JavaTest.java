@@ -1,3 +1,4 @@
+package test;
 public class JavaTest {
     // Private 를 앞에 붙이는 순간 error 가 발생 
     // Private -> 같은 클래스 내부에서만 접근이 가능하고

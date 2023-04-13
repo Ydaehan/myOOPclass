@@ -1,3 +1,4 @@
+package test;
 public class MyMathTest {
     public static void main(String[] args) {
         // 메소드 오버로딩
