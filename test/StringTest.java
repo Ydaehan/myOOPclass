@@ -1,3 +1,4 @@
+package test;
 public class StringTest {
   public static void main(String[] args) {
     String proverb = "A barking dog"; // new 연산자 생략

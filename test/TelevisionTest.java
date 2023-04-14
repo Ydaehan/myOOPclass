@@ -1,3 +1,4 @@
+package test;
 public class TelevisionTest {
     public static void main(String[] args) {
         // 수업 중에 한 것 
