@@ -1,0 +1,1 @@
+# JAVAのMethodの例
