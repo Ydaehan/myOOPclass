@@ -1,4 +1,4 @@
-package myMidtermPractice.makeObjAndUse;
+package myMidtermPractice.ch05.makeObjAndUse;
 
 public class BoxTest {
   public static void main(String[] args) {

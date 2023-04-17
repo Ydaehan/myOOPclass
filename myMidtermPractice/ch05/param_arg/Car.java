@@ -1,4 +1,4 @@
-package myMidtermPractice.param_arg;
+package myMidtermPractice.ch05.param_arg;
 
 public class Car {
   String color;

@@ -1,4 +1,4 @@
-package myMidtermPractice.makeObjAndUse;
+package myMidtermPractice.ch05.makeObjAndUse;
 public class Box {
   // Box class 를 정의하고 Box obj 하나 생성
   // Box 객체 내에 가로, 세로, 높이를 20, 20, 30 으로 성절

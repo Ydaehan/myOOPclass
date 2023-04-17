@@ -1,4 +1,4 @@
-package myMidtermPractice.method;
+package myMidtermPractice.ch05.method;
 
 public class Television {
   int channel, volume;

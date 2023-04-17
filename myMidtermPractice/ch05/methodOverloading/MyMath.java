@@ -1,4 +1,4 @@
-package myMidtermPractice.methodOverloading;
+package myMidtermPractice.ch05.methodOverloading;
 
 public class MyMath {
   // 정수 값을 제곱하는 메소드

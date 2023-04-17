@@ -1,4 +1,4 @@
-package myMidtermPractice.method;
+package myMidtermPractice.ch05.method;
 
 public class TelevisionTest {
   public static void main(String[] args) {

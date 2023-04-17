@@ -1,4 +1,4 @@
-package myMidtermPractice.methodOverloading;
+package myMidtermPractice.ch05.methodOverloading;
 
 public class MyMathTest {
   public static void main(String[] args) {
