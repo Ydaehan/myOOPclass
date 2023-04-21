@@ -3,7 +3,7 @@ package sortingAlgorithmTest;
 
 public class SortingUtil {
   // SelectionSort (선택 정렬)
-   public static void SelectionSort(int[] values){
+   public static void selectionSort(int[] values){
     for(int i = 0; i < values.length; i++){
       int minIdx = i;
       for(int j = i+1; j < values.length; j++){
@@ -21,7 +21,7 @@ public class SortingUtil {
 
   // SelectionSort (선택 정렬)
   // int형 뿐 아니라 모든 타입에서 값을 정렬 하려면?
-  public static void SelectionSort(Comparable[] values){
+  public static void SelectionSort(interfaceTest.Comparable2[] values){
     for(int i = 0; i < values.length; i++){
       int minIdx = i;
       for(int j = i+1; j < values.length; j++){
@@ -43,8 +43,8 @@ public class SortingUtil {
     values[idx2] = tmp;
    }
 
-   private static void swap(int idx1, int idx2, Comparable[] values){
-    Comparable tmp = values[idx1];
+   private static void swap(int idx1, int idx2, interfaceTest.Comparable2[] values){
+    interfaceTest.Comparable2 tmp = values[idx1];
     values[idx1] = values[idx2];
     values[idx2] = tmp;
    }
