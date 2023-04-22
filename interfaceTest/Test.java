@@ -39,7 +39,7 @@ public class Test {
     //   System.out.println(std.getName());
     // }
 
-    Car[] cars = new Car[5];
+    Car[] cars = new Car[5]; 
     c1 = new Car("HyunDai", "Grandeur", 250, 5000);
     cars[0] = c1;
     c2 = new Car("GM", "Impala", 300, 4000);
