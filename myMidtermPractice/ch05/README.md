@@ -86,15 +86,15 @@
   **특정한 클래스가 프로그램의 시작점이 되는 경우에만 클래스 내에 main() method가 필요하다.**
 
 ## 클래스 정의
-- 클래스 이름의 첫 글자는 일반적으로 *대문자*로 한다.
-ex) 
-Television.java
-라는 클래스가 존재할 때 이 클래스가
-<!-- public class Television {
-      int channel;
-      int volume;
-      boolean onOff;
-    } -->
+- 클래스 이름의 첫 글자는 일반적으로 *대문자*로 한다.<br>
+ex) <br>
+Television.java <br>
+라는 클래스가 존재할 때 이 클래스가<br>
+`<!-- public class Television {`<br>
+`      int channel;`<br>
+`      int volume;`<br>
+`      boolean onOff;`<br>
+`    } -->` <br>
 이러한 형태의 필드를 가질 때
 
 - 컴파일러의 입장에서 보면, 새로운 클래스를 정의하는 것은
@@ -106,8 +106,8 @@ Television.java
 - JAVA 에서는 클래스 외부에 문장을 입력할 수 없다. => 모든 문장은 반드시 클래스 내부에 들어가야 함
 **자바에서 객체를 생성하려면 단 한가지 방법만 있다. => 바로 *new 연산자* 를 사용하는 것이다.**
 
-  ex)
-      Television *(1) tv* *(3)=* *(2) new Television*();
+  ex)<br>
+      `Television *(1) tv* *(3)=* *(2) new Television*();` <br>
       (1) 참조 변수 선언
           - Television class의 객체를 참조할 수 있는 변수tv를 선언함
       (2) 객체 생성
@@ -144,9 +144,9 @@ Television.java
 ## 참조 변수와 대입 연산
 - 기초 변수의 값을 다른 변수에 대입하게 되면 변수의 값이 **복사되어서 전달이 된다**
 - 참조변수의 경우 상황이 달라진다.
-  ex) 
-      Television tv1 = new Television();
-      Television tv2 = tv1;
+  ex) <br>
+      `Television tv1 = new Television();` <br>
+      `Television tv2 = tv1;` <br>
 - 이처럼 참조변수를 복사하면 참조값이 복사되어서 동일한 객체를 참조하게 된다.
 
 ## 쓰레기 수집기
@@ -222,14 +222,14 @@ Television.java
   - 메소드 오버로딩을 사용하면 이러한 메소드들을 같은이름으로 편하게 사용 가능하다.
 
 **메소드 오버로딩은 주의 깊게 사용되어야 한다. 메소드 오버로딩은 코드를 읽기 어렵게 만들 수 있기 때문이다.**
-### 메소드 오버로딩의 대표적인 예시
-- void println(boolean x)
-- void println(char x)
-- void println(double x)
-- void println(String x)
--         .
--         .
--         .
+### 메소드 오버로딩의 대표적인 예시 <br>
+- `void println(boolean x)`<br>
+- `void println(char x)`<br>
+- `void println(double x)`<br>
+- `void println(String x)`<br>
+`         .`<br>
+`         .`<br>
+`         .`<br>
 *우리가 자주 쓰던 println() 메소드 또한 어던 데이터도 출력할 수 있도록 오버로딩 되어 있다.*
 
 ## UML
@@ -245,24 +245,24 @@ Television.java
 - 시퀸스 다이어그램
   등과 같은 많은 다이어 그램이 있다.
 
-**UML의 예**
-// --------------------
-// |Car               | <!-- 클래스의 이름을 적어준다 -->
-// --------------------
-// |-speed  : int     | <!-- 클래스의 속성을 나타낸다 -->
-// |-gear   : int     | <!-- 즉 필드를 적어준다 -->
-// |-color  : String  |
-// --------------------
-// |+speedUp()  : void| <!-- 클래스의 동작을 나타낸다 -->
-// |+speedDown(): void| <!-- 즉 메소드를 적어준다 -->
-// --------------------
+**UML의 예** <br>
+// `--------------------` <br>
+// `|Car               |` <!-- 클래스의 이름을 적어준다 --> <br>
+// `--------------------` <br>
+// `|-speed  : int     |` <!-- 클래스의 속성을 나타낸다 --> <br>
+// `|-gear   : int     |` <!-- 즉 필드를 적어준다 --> <br>
+// `|-color  : String  |` <br>
+// `--------------------` <br>
+// `|+speedUp()  : void|` <!-- 클래스의 동작을 나타낸다 --> <br>
+// `|+speedDown(): void|` <!-- 즉 메소드를 적어준다 --> <br>
+// `--------------------` <br>
 
 - 필드에 대해서는 자료형을 표기할 수 있고,
   메소드에 대해서는 매개변수와 반환형을 표기 할 수 있다.
 - 필드의 자료형은 이름 뒤에 : 기호를 쓰고 자료형을 적으면 된다.
-- 필드나 메소드의 이름 앞에는 *가시성 표시자(visibility indicator)*가 올 수 있다.
-* + : public
-* - : private
+- 필드나 메소드의 이름 앞에는 *가시성 표시자(visibility indicator)*가 올 수 있다. <br>
+* + : public <br>
+* - : private <br>
 
 ### 의존 관계
 - 점선의 열린 화살표는 의존을 나타낸다.
@@ -280,26 +280,26 @@ Television.java
 ### 객체의 생성
 - 자바에서 객체를 생성하는 방법은 단 하나뿐
   *new*
-ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 -->
-    이 예시를 실행하면 String객체가 하나 생성된다
-    여기서 's'는 참조 변수로 생성된 객체를 가리키는 변수
-    *기초 변수*는 값을 변수 안에 저장하지만
-    *참조 변수*는 **객체의 주소**가 저장된다.
+ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 --> <br>
+    이 예시를 실행하면 String객체가 하나 생성된다 <br>
+    여기서 's'는 참조 변수로 생성된 객체를 가리키는 변수 <br>
+    *기초 변수*는 값을 변수 안에 저장하지만 <br>
+    *참조 변수*는 **객체의 주소**가 저장된다. <br>
 
-### String class 메소드
-*char*    : *charAt(int index)*                     <!-- 지정된 인데스에 있는 문자를 반환한다 -->
+### String class 메소드 <br>
+*char*    : *charAt(int index)*                     <!-- 지정된 인데스에 있는 문자를 반환한다 --> <br>
 *int*     : *compareTo(String anotherString)*       <!-- 사전적 순서로 문자열을 비교한다 앞에 있으면 -1 
-                                                    / 같으면 0 / 뒤에 있으면 1이 반환된다 -->
-*String*  : *concat(String str)*                    <!-- 주어진 문자열을 현재의 문자열 뒤에 붙인다 -->
-*boolean* : *equals(Object anObject)*               <!-- 주어진 객체와 현재의 문자열을 비교한다 -->
-*boolean* : *equalsIgnoreCase(String anotherString)*<!-- 대소문자를 무시하고 비교한다 -->
-*boolean* : *isEmpty()*                             <!-- length()가 0이면 true를 반환한다 -->
-*int*     : *length()*                              <!-- 현재 문자열의 길이를 반환한다 -->
-*String*  : *replace(char oldChar, char newChar)*   <!-- 주어진 문자열에서 oldChar를 newChar로 
-                                                    변경한, 새로운 문자열을 생성하여 반환한다-->
-*String*  : *subString(int beginIndex,int endIndex)*<!-- 현재 문자열의 일부를 반환한다 -->
-*String*  : *toLowerCase()*                         <!-- 문자열의 문자들을 모두 소문자로 변경한다 -->
-*String*  : *toUpperCase()*                         <!-- 문자열의 문자들을 모두 대문자로 변경한다 -->
+                                                    / 같으면 0 / 뒤에 있으면 1이 반환된다 --> <br>
+*String*  : *concat(String str)*                    <!-- 주어진 문자열을 현재의 문자열 뒤에 붙인다 --> <br>
+*boolean* : *equals(Object anObject)*               <!-- 주어진 객체와 현재의 문자열을 비교한다 --> <br>
+*boolean* : *equalsIgnoreCase(String anotherString)*<!-- 대소문자를 무시하고 비교한다 --> <br>
+*boolean* : *isEmpty()*                             <!-- length()가 0이면 true를 반환한다 --> <br>
+*int*     : *length()*                              <!-- 현재 문자열의 길이를 반환한다 --> <br>
+*String*  : *replace(char oldChar, char newChar)*   <!-- 주어진 문자열에서 oldChar를 newChar로  
+                                                    변경한, 새로운 문자열을 생성하여 반환한다--> <br>
+*String*  : *subString(int beginIndex,int endIndex)*<!-- 현재 문자열의 일부를 반환한다 --> <br>
+*String*  : *toLowerCase()*                         <!-- 문자열의 문자들을 모두 소문자로 변경한다 --> <br>
+*String*  : *toUpperCase()*                         <!-- 문자열의 문자들을 모두 대문자로 변경한다 --> <br>
 
 - String 객체는 일단 생성되면 그 내용은 변경이 불가능하다
   => 위의 메소드 중에 일부 메소드는 변경된 문자열을 담은 새로운 객체를 생성하여 반환한다
@@ -307,10 +307,10 @@ ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 
 
 ### 문자열 상수
 - 문자열 상수는 "Hello World!"와 같이 ""를 사용하여 표현된다.
-- 문자열 상수도 String class의 객체로 저장된다. => 메소드를 문자열 상수를 통해서도 사용할 수 있다.
-  ex) 
-  `int size = "Hello World".length();  // 문자열의 크기`
-  `System.out.println(size);           // 12가 출력된다.`
+- 문자열 상수도 String class의 객체로 저장된다. => 메소드를 문자열 상수를 통해서도 사용할 수 있다. <br>
+  ex)  <br>
+  `int size = "Hello World".length();  // 문자열의 크기` <br>
+  `System.out.println(size);           // 12가 출력된다.` <br>
 
 ### 문자열의 결합
 - 두 개의 문자열은 + 연산자를 이용하여 결합될 수 있다
@@ -322,16 +322,16 @@ ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 
 
 ### 랩퍼 클래스
 #### 문자열을 수치값으로 변환하는 방법
-기초자료형 => 랩퍼클래스
-*byte*    => *Byte*
-*short*   => *Short*
-*int*     => *Integer*
-*long*    => *Long*
-*float*   => *Float*
-*double*  => *Double*
-*char*    => *Character*
-*boolean* => *Boolean*
-*void*    => *Void*
+기초자료형 => 랩퍼클래스 <br>
+*byte*    => *Byte* <br>
+*short*   => *Short* <br>
+*int*     => *Integer* <br>
+*long*    => *Long* <br>
+*float*   => *Float* <br>
+*double*  => *Double* <br>
+*char*    => *Character* <br>
+*boolean* => *Boolean* <br>
+*void*    => *Void* <br>
 - 이처럼 랩퍼 클래스는 기초 자료형을 클래스로 만들고 싶은 경우에 사용하면 된다.
 - 문자열을 수치값으로 변환해주는 메소드도 가지고 있다
 

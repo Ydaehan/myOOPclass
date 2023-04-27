@@ -95,7 +95,7 @@
 - 자바에서는 부모 클래스를 명시적을 지정하지 않으면 Object class의 자식 클래스로 암무적으로 간주
   => **모든 클래스의 부모 클래스는 Object 클래스**
 
-### Object Class 내 메소드
+### Object Class 내 메소드 <br>
 - `Object clone()` : 객체 자신의 복사본을 생성하여 반환한다
 - `boolean equals(Object obj)` : obj가 현재 객체와 같은지를 반환한다
   - `==` 연산자를 사용하여서 객체의 주소가 동일한지를 검사하여서 true or false를 반환한다
@@ -111,14 +111,14 @@
 
 ### instanceof 연산자
 - 객체가 지정된 타입(클래스)인지를 검사할 때 사용
-- 구조
-  `if (obj instanceof type) {`
-  `}`
-- 예시
-  String s = "This is a String";
-  `if (s instanceof String) {`
-    `System.out.println("String 으로부터 만들어진 객체 맞습니다.)`
-  `}`
+- 구조 <br>
+  `if (obj instanceof type) {` <br>
+  `}` <br>
+- 예시 <br>
+  `String s = "This is a String";` <br>
+  `if (s instanceof String) {` <br>
+    `System.out.println("String 으로부터 만들어진 객체 맞습니다.)` <br>
+  `}` <br>
 
 
 ### toString() 메소드
@@ -156,10 +156,10 @@
 - 종단 클래스로 선언하려면 클래스의 선언 맨 앞에 final을 붙인다.
 
 * 구조
-  `final class String`
-  `{`
-    `...`
-  `}`
+  `final class String` <br>
+  `{` <br>
+    `...` <br>
+  `}` <br>
 ### 종단 메소드
 - 특정한 메소드만 오버라이드 될 수 없게 만들려면 `종단 메소드(final method)`로 선언하면 된다
 - 규칙이나 룰 등 꼭 지켜져야 하며 외부에서 그 룰,규칙이 변경되면 안되기 때문에 이러한 경우에 종단 메소드로 작성한다.
