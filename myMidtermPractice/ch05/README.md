@@ -287,19 +287,19 @@ ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 
     *참조 변수*는 **객체의 주소**가 저장된다.
 
 ### String class 메소드
-*char*    : *charAt(int index)*                     <!-- 지정된 인데스에 있는 문자를 반환한다 -->
+*char*    : *charAt(int index)*                     <!-- 지정된 인데스에 있는 문자를 반환한다 --> <br>
 *int*     : *compareTo(String anotherString)*       <!-- 사전적 순서로 문자열을 비교한다 앞에 있으면 -1 
-                                                    / 같으면 0 / 뒤에 있으면 1이 반환된다 -->
-*String*  : *concat(String str)*                    <!-- 주어진 문자열을 현재의 문자열 뒤에 붙인다 -->
-*boolean* : *equals(Object anObject)*               <!-- 주어진 객체와 현재의 문자열을 비교한다 -->
-*boolean* : *equalsIgnoreCase(String anotherString)*<!-- 대소문자를 무시하고 비교한다 -->
-*boolean* : *isEmpty()*                             <!-- length()가 0이면 true를 반환한다 -->
-*int*     : *length()*                              <!-- 현재 문자열의 길이를 반환한다 -->
-*String*  : *replace(char oldChar, char newChar)*   <!-- 주어진 문자열에서 oldChar를 newChar로 
-                                                    변경한, 새로운 문자열을 생성하여 반환한다-->
-*String*  : *subString(int beginIndex,int endIndex)*<!-- 현재 문자열의 일부를 반환한다 -->
-*String*  : *toLowerCase()*                         <!-- 문자열의 문자들을 모두 소문자로 변경한다 -->
-*String*  : *toUpperCase()*                         <!-- 문자열의 문자들을 모두 대문자로 변경한다 -->
+                                                    / 같으면 0 / 뒤에 있으면 1이 반환된다 --> <br>
+*String*  : *concat(String str)*                    <!-- 주어진 문자열을 현재의 문자열 뒤에 붙인다 --> <br>
+*boolean* : *equals(Object anObject)*               <!-- 주어진 객체와 현재의 문자열을 비교한다 --> <br>
+*boolean* : *equalsIgnoreCase(String anotherString)*<!-- 대소문자를 무시하고 비교한다 --> <br>
+*boolean* : *isEmpty()*                             <!-- length()가 0이면 true를 반환한다 --> <br>
+*int*     : *length()*                              <!-- 현재 문자열의 길이를 반환한다 --> <br>
+*String*  : *replace(char oldChar, char newChar)*   <!-- 주어진 문자열에서 oldChar를 newChar로  
+                                                    변경한, 새로운 문자열을 생성하여 반환한다--> <br>
+*String*  : *subString(int beginIndex,int endIndex)*<!-- 현재 문자열의 일부를 반환한다 --> <br>
+*String*  : *toLowerCase()*                         <!-- 문자열의 문자들을 모두 소문자로 변경한다 --> <br>
+*String*  : *toUpperCase()*                         <!-- 문자열의 문자들을 모두 대문자로 변경한다 --> <br>
 
 - String 객체는 일단 생성되면 그 내용은 변경이 불가능하다
   => 위의 메소드 중에 일부 메소드는 변경된 문자열을 담은 새로운 객체를 생성하여 반환한다
@@ -322,16 +322,16 @@ ex) `String s = new String("Hello World!");` <!-- 선언과 동시에 초기화 
 
 ### 랩퍼 클래스
 #### 문자열을 수치값으로 변환하는 방법
-기초자료형 => 랩퍼클래스
-*byte*    => *Byte*
-*short*   => *Short*
-*int*     => *Integer*
-*long*    => *Long*
-*float*   => *Float*
-*double*  => *Double*
-*char*    => *Character*
-*boolean* => *Boolean*
-*void*    => *Void*
+기초자료형 => 랩퍼클래스 <br>
+*byte*    => *Byte* <br>
+*short*   => *Short* <br>
+*int*     => *Integer* <br>
+*long*    => *Long* <br>
+*float*   => *Float* <br>
+*double*  => *Double* <br>
+*char*    => *Character* <br>
+*boolean* => *Boolean* <br>
+*void*    => *Void* <br>
 - 이처럼 랩퍼 클래스는 기초 자료형을 클래스로 만들고 싶은 경우에 사용하면 된다.
 - 문자열을 수치값으로 변환해주는 메소드도 가지고 있다
 
