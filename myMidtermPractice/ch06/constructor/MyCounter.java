@@ -7,6 +7,6 @@ public class MyCounter {
   }
   
   MyCounter(int value){
-    counter = value;
+    int counter = value;
   }
 }
