@@ -46,7 +46,7 @@ public class AnonymousTest {
       // 그렇다고 부모 클래스 이름으로 생성자를 만들 수도 없다.
       // public Student() {} X
       public void sayHello(){
-        System.out.println("안녕하세요");
+        System.out.println("안녕하세요"); 
         System.out.println(getName());
       }
 
