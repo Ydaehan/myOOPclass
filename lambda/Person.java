@@ -35,6 +35,10 @@ public class Person {
     // ex:  this.getName().substring(1,2);
   }
 
+  public String getName() {
+    return name;
+  }
+
   public Sex getGender() {
     return gender;
   }
