@@ -24,14 +24,16 @@ public class CallbackTest {
      *     무명클래스 클래스 정의와 객체 생성이 하나의 문장으로 해결되는 것.
      */
 
-    Timer timer = new Timer(1000, new ActionListener() {
+    // Timer timer = new Timer(1000, new ActionListener() {
 
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        System.out.println("Beep");
-      }
+    //   @Override
+    //   public void actionPerformed(ActionEvent e) {
+    //     System.out.println("Beep");
+    //   }
 
-    }); // ActionListener type 의 객체만 들어갈 수 있음
+    // }); // ActionListener type 의 객체만 들어갈 수 있음
+
+    Timer timer = new Timer(1000, (e) -> {System.out.println("Beep from lambda expression!");});
     timer.start();
     // Beep from 무명 클래스
 
