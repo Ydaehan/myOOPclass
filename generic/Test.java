@@ -39,7 +39,11 @@ public class Test {
     int idx = ((String)v).indexOf("우리나라");
     System.out.println(((String)v).substring(idx));
 
-    int val = (int)strBox.getValue();
+    int val = (int)strBox.getValue(); // 값을 Object type으로 리턴해주기 때문에 형변환이 안됨
     System.out.println("프로그램을 종료합니다.");
+    /* 문제점 */
+    /* 
+     * 1. 값을 빼서 쓸 때 명시적 타입 캐스팅(형변환)을 해야한다. => 귀찮다. 런타임 오류 발생 가능
+     */
   }
 }

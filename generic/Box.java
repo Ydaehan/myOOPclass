@@ -3,7 +3,7 @@ package generic;
 public class Box {
   Object value;
 
-  public Object getValue() {
+  public Object getValue() {  // 값을 Object type으로 return 함
     return value;
   }
 
